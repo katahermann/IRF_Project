@@ -1,3 +1,5 @@
+UPDATE: E-mailen egyeztetettek alapján változtatom a readme fájlt, az  IRF_Project repository-t utólag készítettem el, a projektemhez tartozó commitok a VersionControl, IRF_Project branchen találhatók.
+
 Covid19 Teszt
 
 Az általam készített szoftver célja, hogy megállapítsa egy adott emberről, hogy koronavírusos-e vagy sem.
