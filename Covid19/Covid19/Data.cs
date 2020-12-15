@@ -23,7 +23,7 @@ namespace Covid19
         private void LoadData()
         {
             Patients.Clear();
-            using (StreamReader sr = new StreamReader("Patients.csv", Encoding.Default))
+            using (StreamReader sr = new StreamReader(".\\Resources\\Patients.csv", Encoding.Default))
             {
                 sr.ReadLine();
                 while (!sr.EndOfStream)
