@@ -23,7 +23,7 @@ namespace Covid19
         private void LoadData()
         {
             Patients.Clear();
-            using (StreamReader sr = new StreamReader("Patients.csv", Encoding.Default))
+            using (StreamReader sr = new StreamReader(".\\Resources\\Patients.csv", Encoding.Default))
             {
                 sr.ReadLine();
                 while (!sr.EndOfStream)
@@ -38,7 +38,7 @@ namespace Covid19
         {
             pat.ID = ++lastID;
             Patients.AddLast(pat);
-            string newFileName = "Patients.csv";
+            string newFileName = ".\\Resources\\Patients.csv";
             string patientDetails = $"{pat.ID};{pat.Kor};{pat.Nem};{pat.Kulfold};{pat.Erintkez};{pat.Tunet};{pat.Korlatoz};{pat.Teszt};{Environment.NewLine}";
             File.AppendAllText(newFileName, patientDetails);
         }
